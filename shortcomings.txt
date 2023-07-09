@@ -3,3 +3,4 @@
 3) Could not incorporate the lines in how it works section
 4) The appearance of the youtube video would require JS to implement.
 5) Could not implement dropdowns (could implement but the styling was not exact, so avoided)
+6) In the responsive mode, the hamburger menu should be on the left, whereas it is on the right.
