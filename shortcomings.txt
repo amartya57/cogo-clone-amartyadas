@@ -1,0 +1,5 @@
+1) The Top navbar changes color from yellow to white when it becomes sticky. It would require JS to implement.
+2) The Whatsapp number/ contact us becomes a small icon and sticks to the right when scrolling. Could not implement that.
+3) Could not incorporate the lines in how it works section
+4) The appearance of the youtube video would require JS to implement.
+5) Could not implement dropdowns (could implement but the styling was not exact, so avoided)
