@@ -157,6 +157,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-width: 0;
 }
 
 .btn{
@@ -475,15 +476,21 @@ nav{
 .ready-btn {
     -webkit-border-radius: 4;
     -moz-border-radius: 4;
+    width: 40%;
+    max-width: 150px;
     border-radius: 4px;
     font-family: 'Ubuntu';
     color: white;
     font-size: 16px;
     background: #ee3425;
-    padding: 5px 16px 5px 16px;
+    padding: 5px;
     text-decoration: none;
     cursor: pointer;
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 
@@ -514,11 +521,14 @@ nav{
 
 .works-button-flex{
     display: flex;
+    min-width: 0;
     align-items: center;
 }
 
 .works-button{
-    margin: 1em 1.5em;
+    padding: 1em 1.5em;
+    display: flex;
+    min-width: 0;
 }
 
 .logistic-partners-btn {
@@ -530,11 +540,16 @@ nav{
     color: black;
     font-size: 14px;
     padding: 10px 25px;
-    width: 200px;
+    width: 100%;
+    min-width: 0;
     background: #c4cbcf;
     text-decoration: none;
     border: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
   }
   
   .logistic-partners-btn:hover {
@@ -551,11 +566,16 @@ nav{
     color: black;
     font-size: 14px;
     padding: 10px 25px;
-    width: 200px;
+    width: 100%;
+    min-width: 0;
     background: #fbdc00;
     text-decoration: none;
     border: 0;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
   }
   
   .cargo-owners-btn:hover {
@@ -616,6 +636,7 @@ nav{
 
 .img-works-2{
     width: 100%;
+    min-width: 0;
     height: auto;
 }
 
@@ -676,6 +697,7 @@ nav{
 
 .is-img{
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -711,6 +733,16 @@ nav{
     box-shadow: none;
     border: none;
     margin-top: 1em;
+}
+
+.gst-img{
+    display: flex;
+    min-width: 0;
+}
+
+.gst-girl{
+    width: 100%;
+    min-width: 0;
 }
 
 .gst-content > h1{
@@ -840,6 +872,7 @@ nav{
 
 .pricing-h3{
     text-align: center;
+    font-family: "Ubuntu";
     font-weight: 800;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
@@ -962,6 +995,14 @@ nav{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     outline: none;
+}
+
+.sbscrb{
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
 }
 
 
@@ -1221,7 +1262,7 @@ nav{
 }
 
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .navbar-expand-lg{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -1293,6 +1334,9 @@ nav{
 
     .tfsubmitbtn{
         flex: 1 1 140px;
+        display: flex;
+        justify-content: center;
+        min-width: 0;
     }
 
 
@@ -1304,6 +1348,7 @@ nav{
         width: 100%;
         font-weight: 300;
         font-size: 12px;
+        min-width: 0;
     }
 
     .stat{
@@ -1367,6 +1412,11 @@ nav{
 
     .works-button-flex{
         flex-direction: column;
+        min-width: 0;
+    }
+
+    .works-button{
+        padding: 1rem 0;
     }
 
     .works-main{
@@ -1392,8 +1442,8 @@ nav{
     }
 
     .scimghdn{
-        display: block;
-        width: 280px;
+        display: flex;
+        min-width: 0;
         height: auto;
         margin-bottom: 2rem;
     }
@@ -1409,7 +1459,7 @@ nav{
     .gst-flex{
         flex-direction: column;
         width: 100%;
-        padding: 3em;
+        padding: 1em;
     }
 
     .gst-btn{
@@ -1430,17 +1480,79 @@ nav{
         padding: 8px;
     }
 
+    .blogs{
+        margin: 0;
+    }
+
+    .blog-cards{
+        padding: 4rem 0;
+    }
+
+    .subscribe-box{
+        /* text-align: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+
+    .subscribe{
+        min-width: 0;
+    }
+
+    .subscribe-content{
+        /* text-align: center; */
+        min-width: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .subscribe-img-box{
         display: none;
     }
 
-    .subscribe-form{
-        max-width: 100%;
+    .subscribe-form-div{
+        min-width: 0;
+        display: flex;
         justify-content: center;
     }
+
+    .subscribe-form{
+        max-width: 100%;
+        min-width: 0;
+        justify-content: center;
+    }
+
+    .subscribe-ip-div{
+        display: flex;
+        min-height: 0;
+        flex: 50%;
+    }
+
+    .subscribe-ip{
+        display: flex;
+        align-items: center;
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .subscribe-btn-div{
+        display: flex;
+        min-width: 0;
+        flex: 50%;
+    }
+
     .subscribe-btn{
-        padding: 10px;
-        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .subscribe-ip{
@@ -1471,3 +1583,18 @@ nav{
         padding-left: 2rem;
     }
   }
+
+
+@media (max-width: 270px){
+    .subscribe-form-div{
+        display: none;
+    }
+
+    .cargo-owners-btn{
+        width: 100px;
+    }
+
+    .logistic-partners-btn{
+        width: 100px;
+    }
+}
